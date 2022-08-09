@@ -1,0 +1,25 @@
+playerName = input("Welcome to Chaos Adventure! Please type out your name in the following space -->")
+
+print("Hello, " + playerName + ". You are having a peaceful dream in your comfy bed one night and all of a sudden, a loud bang sounds from downstairs. Do you choose to STAY in your room or EVALUATE?")
+
+c1 = input()
+ans = 'incorrect'
+while(ans=='incorrect'):
+    if(c1.upper()=="STAY"):
+            print(playerName + " decides to stay in the room and ends up staying inside forever as no one seems to come to help them.")
+            ans = 'correct'
+    elif(c1.upper()=="EVALUATE"):
+            print(playerName + " exits the room silently and reaches the main hall.")
+            ans = 'correct'
+            def scene2():
+                scene2()
+    else:
+            print("ENTER THE CORRECT CHOICE! Stay or Evaluate?")
+            c1 = input()
+            
+            print("In the main hall, " + playerName+ " finds a mysterious object, like a cube, except its glowing in various spots. On the top side of the cube, there is a glowing blue button that looks very pressable. Would you like to IGNORE or PRESS?")
+            c2 = input()
+            ans = "incorrect"
+            while(ans=="incorrect"):
+                if(c2.upper()=="press"):
+                    print("The moment you press the button, you feel a very strong power surge travel throughout your body.")
